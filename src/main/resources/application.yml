@@ -1,0 +1,4 @@
+aliyun:
+  accessKey: ${}
+  accessKeySecret: qTQtuBqXFIuPj68FANytsK2YABbIsI
+  endpoint: ecs-cn-hangzhou.aliyuncs.com

@@ -1,0 +1,36 @@
+{
+    "java.format.settings.url": "eclipse-formatter.xml",
+    "java.completion.importOrder": [
+        "java",
+        "javax",
+        "com",
+        "net",
+        "org",
+        "com.example",
+        "#",
+        "#com.example"
+    ],
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.codeGeneration.hashCodeEquals.useInstanceof": true,
+    "java.codeGeneration.hashCodeEquals.useJava7Objects": true,
+    "java.saveActions.organizeImports": true,
+    "java.configuration.checkProjectSettingsExclusions": false,
+    "java.dependency.syncWithFolderExplorer": false,
+    "files.enableTrash": false,
+    "java.completion.favoriteStaticMembers": [
+        "org.hamcrest.Matchers.*",
+        "org.hamcrest.MatcherAssert.*",
+        "org.junit.Assert.*",
+        "org.junit.Assume.*",
+        "org.junit.jupiter.api.Assertions.*",
+        "org.junit.jupiter.api.Assumptions.*",
+        "org.junit.jupiter.api.DynamicContainer.*",
+        "org.junit.jupiter.api.DynamicTest.*",
+        "org.mockito.Mockito.*",
+        "org.mockito.ArgumentMatchers.*",
+        "org.mockito.Answers.*",
+    ],
+    "cSpell.words": [
+        "Aliyun"
+    ]
+}

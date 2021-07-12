@@ -45,7 +45,7 @@ public class CommonService {
         this.httpClient = HttpClient.newHttpClient();
     }
 
-    @Scheduled(fixedDelay = 1_000, fixedRate = 60_000)
+    @Scheduled(initialDelayString = "1000", fixedRateString = "60000")
     public void refreshTrojanPermissions() {
         var newIp = getCurrentIp();
         if (newIp.equals(lastIp)) {

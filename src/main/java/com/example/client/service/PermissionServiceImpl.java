@@ -79,7 +79,7 @@ public class PermissionServiceImpl implements PermissionService {
             revoke.setNicType(permission.getNicType());
             try {
                 var response = client.revokeSecurityGroup(revoke);
-                LOGGER.info("{}, {}, ip revoked: {}", region, office, response.body.toMap());
+                LOGGER.info("{} {} ip revoked: {}", region, office, response.body.toMap());
             } catch (Exception exp) {
                 throw new RuntimeException(exp);
             }

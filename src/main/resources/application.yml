@@ -1,6 +1,6 @@
 aliyun:
-  accessKey: $ALIYUN_ACCESSKEY
-  accessKeySecret: $ALIYUN_ACCESSKEY_SECRET
+  accessKey: $ALIYUN_ACCESS_KEY
+  accessKeySecret: $ALIYUN_ACCESS_KEY_SECRET
   endpoint: ecs-cn-hangzhou.aliyuncs.com
   permissions:
     - name: trojan

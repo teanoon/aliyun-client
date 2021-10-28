@@ -1,0 +1,7 @@
+ahoyapi: v2
+commands:
+  vup:
+    cmd: "vagrant up"
+    usage: Start the vagrant box if one exists.
+  build:
+    cmd: docker build --build-arg http_proxy=http://172.99.0.1:8118 --build-arg https_proxy=http://172.99.0.1:8118 -t teanoon/aliyun-client .

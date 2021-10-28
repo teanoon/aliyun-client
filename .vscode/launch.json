@@ -15,7 +15,8 @@
             "name": "Launch Application",
             "request": "launch",
             "mainClass": "com.example.client.Application",
-            "projectName": "aliyun-client"
+            "projectName": "aliyun-client",
+            "envFile": "${workspaceFolder}/.env"
         }
     ]
 }

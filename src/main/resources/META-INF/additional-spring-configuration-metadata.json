@@ -1,0 +1,21 @@
+{"properties": [
+  {
+    "name": "aliyun.endpoint",
+    "type": "java.lang.String",
+    "description": "A description for 'aliyun.endpoint'"
+  },
+  {
+    "name": "aliyun.accessKey",
+    "type": "java.lang.String",
+    "description": "A description for 'aliyun.accessKey'"
+  },
+  {
+    "name": "aliyun.accessKeySecret",
+    "type": "java.lang.String",
+    "description": "A description for 'aliyun.accessKeySecret'"
+  },
+  {
+    "name": "aliyun.permissions",
+    "description": "A description for 'aliyun.permissions'"
+  }
+]}

@@ -5,6 +5,10 @@
   "build": {
     "dockerfile": "Dockerfile"
   },
+  "containerEnv": {
+    "http_proxy": "http://172.99.0.1:8118",
+    "https_proxy": "http://172.99.0.1:8118"
+  },
   "extensions": [
     "vscjava.vscode-java-pack",
     "k--kato.intellij-idea-keybindings",

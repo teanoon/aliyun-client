@@ -14,7 +14,7 @@ import org.springframework.stereotype.Component;
 public class IpService {
 
     private static final String IP_DETECT_API = "https://ip.cn/api/index?ip=&type=0";
-    static final Pattern IP_PATTERN = Pattern.compile(".+?(?<ip>(\\d{2,3}\\.?){4}).+?");
+    static final Pattern IP_PATTERN = Pattern.compile(".+?(?<ip>(\\d{1,3}\\.?){4}).+?");
 
     private final HttpClient httpClient;
 

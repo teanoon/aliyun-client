@@ -38,7 +38,7 @@ public class Application {
         permissionConfigs.forEach(config -> {
             var permissions = permissionService.getPermissions(config.getRegion(), config.getSecurityGroupId(), config.getComment());
             permissionService.revokeOldPermissions(config.getRegion(), config.getSecurityGroupId(), permissions, config.getComment());
-            permissionService.addPermissions(config.getRegion(), config.getSecurityGroupId(), newIp, config.getPortRange(), config.getComment());
+            permissionService.addPermissions(config.getRegion(), config.getSecurityGroupId(), newIp, config.getPortRange(), config.getProtocol(), config.getComment());
         });
         lastIp = newIp;
     }

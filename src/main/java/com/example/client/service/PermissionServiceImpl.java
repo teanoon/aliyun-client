@@ -18,7 +18,6 @@ public class PermissionServiceImpl implements PermissionService {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(PermissionServiceImpl.class);
 
-    private static final String PROTOCOL = "TCP";
     private static final String NIC_TYPE = "intranet";
     private static final String PRIORITY = "1";
     private static final String POLICY = "Accept";
@@ -45,11 +44,11 @@ public class PermissionServiceImpl implements PermissionService {
     }
 
     @Override
-    public void addPermissions(String region, String securityGroupId, String newIp, String portRange, String office) {
+    public void addPermissions(String region, String securityGroupId, String newIp, String portRange, String protocol, String office) {
         var request = new AuthorizeSecurityGroupRequest();
         request.setRegionId(region);
         request.setSecurityGroupId(securityGroupId);
-        request.setIpProtocol(PROTOCOL);
+        request.setIpProtocol(protocol);
         request.setPortRange(portRange);
         request.setNicType(NIC_TYPE);
         request.setSourceCidrIp(newIp + "/32");

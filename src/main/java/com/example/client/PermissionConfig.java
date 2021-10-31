@@ -9,6 +9,7 @@ public class PermissionConfig {
     private String region;
     private String securityGroupId;
     private String portRange;
+    private String protocol;
     private String comment;
 
 }

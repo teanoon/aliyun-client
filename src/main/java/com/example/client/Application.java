@@ -36,7 +36,7 @@ public class Application {
             return;
         }
         permissionConfigs.forEach(config -> {
-            var permissions = permissionService.getPermissions(config.getRegion(), config.getSecurityGroupId(), config.getComment());
+            var permissions = permissionService.getPermissions(config.getRegion(), config.getSecurityGroupId(), config.getPortRange(), config.getComment());
             permissionService.revokeOldPermissions(config.getRegion(), config.getSecurityGroupId(), permissions, config.getComment());
             permissionService.addPermissions(config.getRegion(), config.getSecurityGroupId(), newIp, config.getPortRange(), config.getProtocol(), config.getComment());
         });

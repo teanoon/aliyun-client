@@ -29,7 +29,7 @@ public class PermissionServiceImpl implements PermissionService {
     }
 
     @Override
-    public List<DescribeSecurityGroupAttributeResponseBodyPermissionsPermission> getPermissions(String region, String securityGroupId, String office) {
+    public List<DescribeSecurityGroupAttributeResponseBodyPermissionsPermission> getPermissions(String region, String securityGroupId, String portRange, String office) {
         var request = new DescribeSecurityGroupAttributeRequest();
         request.setRegionId(region);
         request.setSecurityGroupId(securityGroupId);
@@ -37,6 +37,7 @@ public class PermissionServiceImpl implements PermissionService {
             var response = client.describeSecurityGroupAttribute(request);
             return response.body.permissions.permission.stream()
                 .filter(permission -> office.equals(permission.getDescription()))
+                .filter(permission -> portRange.equals(permission.getPortRange()))
                 .collect(Collectors.toList());
         } catch (Exception exp) {
             throw new RuntimeException(exp);

@@ -6,7 +6,7 @@ import com.aliyun.ecs20140526.models.DescribeSecurityGroupAttributeResponseBody.
 
 public interface PermissionService {
 
-    List<DescribeSecurityGroupAttributeResponseBodyPermissionsPermission> getPermissions(String region, String securityGroupId, String office);
+    List<DescribeSecurityGroupAttributeResponseBodyPermissionsPermission> getPermissions(String region, String securityGroupId, String portRange, String office);
 
     void addPermissions(String region, String securityGroupId, String newIp, String portRange, String protocol, String office);
 

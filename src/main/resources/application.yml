@@ -1,6 +1,6 @@
 aliyun:
-  accessKey: $ALIYUN_ACCESS_KEY
-  accessKeySecret: $ALIYUN_ACCESS_KEY_SECRET
+  accessKey: ${ALIYUN_ACCESS_KEY}
+  accessKeySecret: ${ALIYUN_ACCESS_KEY_SECRET}
   endpoint: ecs-cn-hangzhou.aliyuncs.com
   permissions:
     - name: trojan
@@ -8,16 +8,16 @@ aliyun:
       securityGroupId: sg-j6c7mqm1h3u2w98f11i9
       portRange: 80/80
       protocol: TCP
-      comment: hz
+      comment: ${DEVICE}
     - name: trojan
       region: cn-hongkong
       securityGroupId: sg-j6c7mqm1h3u2w98f11i9
       portRange: 443/443
       protocol: TCP
-      comment: hz
+      comment: ${DEVICE}
     - name: n2n
       region: cn-hangzhou
       securityGroupId: sg-bp1gi2ckefjvdax5kot5
       portRange: 7777/7777
       protocol: UDP
-      comment: hz
+      comment: ${DEVICE}
